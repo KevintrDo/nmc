@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Kevin Do" content="descripion of page"> 
     <title>assignmentOne</title>
+    <style>
+        li a {
+            text-decoration: none;            
+        }
+        li a:visited {
+            text-decoration: none;  
+            color: rgb(0, 0, 0); 
+        }    
+        li a:focus {
+            text-decoration: none; 
+            color:yellow; 
+        }
+        li a:hover, a:active {
+            text-decoration: none; 
+            color:rgb(46, 155, 182);
+        }
+        
+    </style>
 </head>
 <body>
-    
+    <h1>Kevin Do</h1>
+    <a href="images/me.jpg"><img src="images/me.jpg" title="kevin's photo" alt="My photo!"></a>
+    <ul style="list-style-type:square">
+        <li>I love to travel</li>
+            <ol style="list-style-type: upper-roman">
+            <li>Went to Thailand</li>
+            <li>Went to Vietnam</li>
+            <li>Went to France</li>
+            <li>Went to Australia</li>
+            </ol>
+        <li>Lived in Germany for two years</li>
+        <li>I do photography</li>
+    </ul>
+    <h2>Links</h2>
+    <ul>
+        <li style="font-family: 'Courier New', Courier, monospace;"><a href="details/highschool.html">Traveling</a></li>
+        <li style="font-style: italic;"><a href="details/highschool.html#Favorites">Favorites</a></li>
+        <li style="font-size:20px;"><a href="details/highschool.html#Education">Education</a></li>
+        <li style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><a href="details/highschool.html#Photography">Photography</a></li>
+        <li style="font-weight: bolder;"><a href="https://travel.usnews.com/destinations/">Guide</a></li>
+    </ul>
 </body>
 </html>
