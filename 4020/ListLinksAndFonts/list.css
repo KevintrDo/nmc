@@ -1,0 +1,64 @@
+ul {
+    list-style-image: url(toilet.png);
+}
+
+a {
+    color:blue
+}
+
+li a {
+    text-decoration: none;            
+}
+
+li a:visited {
+    text-decoration: none;  
+    color: rgb(0, 0, 0); 
+}    
+
+li a:focus {
+    text-decoration: none; 
+    color:yellow; 
+}
+
+li a:hover, a:active {
+    text-decoration: none; 
+    color:rgb(46, 155, 182);
+}
+
+a {
+    text-decoration: none;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    padding: 8px 16px;
+    color: #3498db;
+    display: inline-block;
+    margin: 10px;
+}
+
+a:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+a:active {
+    background-color: #2980b9;
+}
+
+a:visited {
+    color: #d51b62;
+}
+
+a:focus {
+    outline: 2px solid #8e44ad;
+}
+
+@font-face {
+    font-family: "great-vibes";
+    src: url("GreatVibes-Regular.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "great-vibes";
+}

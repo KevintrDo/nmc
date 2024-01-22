@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form 2 Elements </title>
+    <style>
+        header {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        body {
+            background-color: rgb(250, 222, 227);
+            color: rgb(183, 58, 13);
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        Form Practice        
+    </header>
+    <main>
+        <form autocomplete="on" action="showme.html" method="get">
+            Choose your option! 
+            <select>
+                <option value="car">Car</option>
+                <option value="apple">Apple</option>
+                <option value="table">Table</option>
+                <option value="Laptop">Laptop</option>
+            </select> <br/>
+            What will you not pick? <input type="text" autocomplete="on"><br/>
+            <fieldset>
+                <legend>What would you rather eat?</legend>
+                <input type="radio" name="steak" id="steak">Skeak<br/>
+                <input type="radio" name="bread" id="bread">Bread<br/>
+                <input type="radio" name="corn" id="corn">Corn<br/>                
+            </fieldset>
+            How many apples do you eat? <input type="number" name="number" id="number"><br/>
+            <input type="submit"/>
+        </form>
+    </main>
+</body>
+</html>

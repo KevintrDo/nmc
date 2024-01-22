@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form 3 Elements </title>
+    <style>
+        header {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        body {
+            background-color: rgb(250, 222, 227);
+            color: rgb(183, 58, 13);
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        Form Practice        
+    </header>
+    <main>
+        <form action="showme.html" method="get">
+            <label for="price">Choose a maximum house price: </label>
+            <input
+                type="range"
+                name="price"
+                id="price"
+                min="50000"
+                max="500000"
+                step="100"
+                value="250000" />
+            <output class="price-output" for="price"></output> <br>
+            <input type="color" name="color" id="color" /><br>
+            <input type="submit"/>
+        </form>
+    </main>
+    <script>
+    const price = document.querySelector("#price");
+    const output = document.querySelector(".price-output");
+
+    output.textContent = price.value;
+
+    price.addEventListerner("input", () => {
+        output.textContent = price.value;
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<meta charset="utf-8">
+<title>J form test</title>
+    <style>
+        header {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        body {
+            background-color: rgb(250, 222, 227);
+            color: rgb(183, 58, 13);
+        }
+
+
+    </style>
+</head>
+<body>
+<label for="name">Name:</label>
+<input type="text" id="name" name="user_name">
+<button id="clickme">value</button>
+</body>
+</html>
+<script>
+// step 1. on the next two lines we tie IDs to variables
+var formVal = document.querySelector('#name');
+var whichBut = document.querySelector("#clickme");
+
+// Here we create the getVal function
+function getVal() {
+alert (formVal.value);
+}
+
+//Here we activate the getVal function whenever whichBut is clicked
+ whichBut.onclick = getVal;
+</script>
+</body>
+</html>
