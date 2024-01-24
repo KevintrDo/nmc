@@ -1,0 +1,51 @@
+@import url(https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Neuton:wght@200&family=Playfair+Display&family=Satisfy&display=swap);
+body {
+    background: linear-gradient(rgb(49, 49, 173),pink,rgb(228, 178, 85),rgb(223, 89, 89),rgb(29, 28, 28));
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+header::first-letter{
+    font-size: 44px;
+}
+
+header::first-line {
+    color:rgb(215, 3, 3);
+}
+
+#rotate {
+    transform: rotate(170deg);
+}
+
+.boxes {
+    display: block;    
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    margin: auto;
+    width: 70%;
+    font-family: 'Black Ops One', system-ui;
+}
+
+#one {
+    background-color: #cce78a;
+    background-clip: padding-box;
+    border: 0.4em outset #2334c9;
+    outline: 0.4em inset #7781e0;
+    border-radius: 20px;
+    padding:30px;    
+    margin-bottom: 100px;
+}
+
+#two {
+    background: linear-gradient(to bottom, #5d4839 20%, #dc3530);
+    background-clip: padding-box;
+    color: white;
+    text-shadow: 0x 20px #e3e30c;
+    border: 20px dashed #0e1fc6;
+    padding:30px;    
+    border-radius: 20px;
+}
