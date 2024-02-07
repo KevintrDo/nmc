@@ -1,0 +1,31 @@
+body {
+    font-size: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(255, 231, 194);
+}
+
+p {
+    font-size:1rem;
+    line-height: 1.5;
+    white-space:pre-line;
+    white-space:pre-wrap;
+}
+
+h1 {
+    font-size: 5rem;
+    text-transform:uppercase;
+    text-shadow:20px
+}
+
+h2 {
+    font-size:4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h1,h2,h3 {
+    text-align: center;
+}
+
