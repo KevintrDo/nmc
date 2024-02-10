@@ -1,0 +1,9 @@
+
+.horizontalImg {
+    display: flex;
+    flex-direction: row;
+}
+
+body {
+    background-color: rgb(255, 231, 194);
+}

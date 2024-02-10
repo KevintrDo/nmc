@@ -21,8 +21,8 @@ body {
 }
 
 .photoItem {
-    width: 500px;
-    height: 500px;
+    width: 350px;
+    height: 350px;    
     object-fit: cover;
     border: 8px solid rgb(255, 255, 255);
     border-radius: 20px;
