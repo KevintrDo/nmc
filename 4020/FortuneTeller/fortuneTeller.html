@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortune Teller</title>
+    <style>
+        body {
+            background-color: rgb(255, 231, 194);            
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="namehere" placeholder="Your name here"><br>
+    <div id="result"></div>
+    <button onclick="fortune()">your fortune</button>
+</body>
+<script>
+    let outcomes = ["win the lottery this week", 
+    "get a sunburn on a trip to Hawaii this December", 
+    "Win $2000 betting against your favorite football team this fall!"]
+
+    const fortune= () => {
+        let name = document.querySelector('#namehere').value;
+        var item = Math.floor((Math.random() * outcomes.length));
+        result.innerHTML = name + " your forunate is that you will " + outcomes[item];        
+    };
+
+</script>
+</html>
