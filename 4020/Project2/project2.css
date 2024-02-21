@@ -1,0 +1,39 @@
+.flexBoxProject2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 90px;
+}
+
+.pictureProject2 {
+    border: 5px solid black;
+    padding: 10px;
+    font-weight: 800;
+}
+
+.buttonsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    width: 350px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;    
+    gap: 10px;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+.buttonsProject2 {
+    background-color: rgb(73, 70, 70);
+    border-radius: 30px;
+    color:rgb(244, 71, 71);
+    font-size:15px;
+    font-weight: 800;
+    &:hover {
+        transition: background-color 0.3s ease;
+        background-color:rgb(174, 167, 167);
+    }
+}
