@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Cards</title>
+    <style>
+      body {
+        background-color: blanchedalmond;
+      };
+    </style>
+
+</head>
+
+<body>
+  <div id="deck"></div>  <br>
+  <div id="newGame">
+      <button id="resetCards"><strong>Reset</strong></button>
+  </div>
+  <div id="cardGame">
+      <div class="players">
+          <h2>Player One</h2>
+          <div>
+              <button id="shuffleOne">Shuffle</button>
+              <button id="deckpOne">Add</button>
+              <button id="hideOne">Hide/Show Cards</button><br>
+          </div>
+          <div id="deckOne"></div><br>
+      </div>
+
+      <div class="players">
+          <h2>Player Two</h2>
+          <button id="shuffleTwo">Shuffle</button>
+          <button id="deckpTwo">Add</button>
+          <button id="hideTwo">Hide/Show Cards</button><br>
+          <div id="deckTwo"></div><br>
+      </div>
+  </div>
+ 
+</body>
+</html>
+<script src="js/cards.js"></script>
