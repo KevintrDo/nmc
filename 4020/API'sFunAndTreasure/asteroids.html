@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <Link rel="stylesheet" href="asteroids.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asteroids</title>
+    <style>
+            div {
+            display: flex;
+            background-color: black;
+            border-radius: 50%;
+            float: left;
+            margin:2px;
+            justify-content: center;
+            
+            }
+            div div {
+            background-color: rgb(74, 80, 86);
+            justify-content: center;
+            margin-top: auto;
+            }
+
+            .dangerous {
+            background-color: rgb(167, 16, 16);
+            }
+
+            .dangerous div {
+            background-color: rgb(235, 130, 92);
+            }
+        
+    </style>
+</head>
+<body>
+
+</body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+let asteroidDisplay = document.querySelector("body");
+
+$(document).ready(function () {
+    $.getJSON("https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=nEnaIirp1VPrw8yHW1dJnnWD3VT6ZhhIXYSQyivX",
+        function (data) {
+            var howMany = data.near_earth_objects.length;
+            let dataSource = data.near_earth_objects;
+            for (let i = 0; i < dataSource.length; i++) {
+                let maxWidth = dataSource[i].estimated_diameter.kilometers.estimated_diameter_max * 8;
+                let minWidth = dataSource[i].estimated_diameter.kilometers.estimated_diameter_min * 8;
+                let dangerous = dataSource[i].is_potentially_hazardous_asteroid;
+                let dangerClass = "";
+                if (dangerous) {
+                    dangerClass = "class=dangerous "
+                }
+                asteroidDisplay.innerHTML += "<div " + dangerClass + "style='width:" + maxWidth + "px;height:" + maxWidth + "px'>" +
+                "<div style='width:" + minWidth + "px;height:" + minWidth + "px'></div>" +
+                "</div>";
+            }
+        }
+    );
+});
+</script> 
