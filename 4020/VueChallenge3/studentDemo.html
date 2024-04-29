@@ -4,18 +4,25 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <style>img {width:400px;}</style>
-    <title></title>
+    <style>
+        body {
+            background-color: blanchedalmond;
+        }
+        p {
+            font-size: 20px;
+        }
+        h2 {
+            color: red;
+        }
+    </style>
+    <title>Challenge 3!</title>
 </head>
 
 <body>
- <div id="us">
- <div v-for="eachStudent in yall">
- <h2 >{{eachStudent.stu_name}} {{eachStudent.last_name}}</h2> <p>{{eachStudent.fact}}</p>   
-     <img :src="dompart1+eachStudent.domain+dompart2">
-     </div>  
-    
-    </div>   
+    <h2>No images, I tried</h2>
+    <div id="students">
+        <students></students>
+    </div>
 </body>
 </html>
 <script src="youguys.js"></script>
