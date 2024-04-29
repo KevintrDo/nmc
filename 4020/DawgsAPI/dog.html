@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="">
+<head><script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>img {width:400px;}
+        button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: #3498db;
+        border: 2px solid #3498db;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+        margin-bottom: 20px;
+        }
+
+        button:hover {
+        background-color: #2980b9;
+        border-color: #2980b9;
+        }
+
+        button:active {
+        background-color: #2c3e50;
+        border-color: #2c3e50;
+        }</style>
+    <title>Dawgs API!</title>
+</head>
+
+<body>
+    <div id="app">
+        <button v-on:click="showme('sussex')">Sussex</button>
+        <button v-on:click="showme('blenheim')">Blenheim</button>
+        <button v-on:click="showme('brittany')">Brittany</button>
+        <button v-on:click="showme('japanese')">Japanese</button>
+        <button v-on:click="showme('irish')">Irish</button>
+        <button v-on:click="showme('welsh')">Welsh</button>
+        <button v-on:click="showme('cocker')">Cocker</button>
+        <p><button v-on:click="sliderForward()">Next Image</button></p>
+        <p><button v-on:click="sliderBackward()">Previous Image</button></p>
+        <img :src="whichDawg"></a>
+    </div>   
+</body>
+</html>
+<script src="dogApi.js"></script>
