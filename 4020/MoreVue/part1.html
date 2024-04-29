@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <body>
+    <a href="part2.html">Part two of cats!</a>
+    <div id="us">
+      <select v-model="oswald" @change="displayImage">
+        <option
+          v-for="student in yall"
+          :value="dompart1 + student.domain + dompart2"
+        >
+          {{student.stu_name}}
+        </option>
+      </select>
+      <br />
+      <img :src="image" alt="image" />
+    </div>
+  </body>
+</html>
+<script src="youguys.js"></script>

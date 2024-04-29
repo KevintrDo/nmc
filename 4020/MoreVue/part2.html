@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Part 2</title>
+    <style>
+        .button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: #3498db;
+        border: 2px solid #3498db;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+        margin-bottom: 20px;
+        }
+
+        .button:hover {
+        background-color: #2980b9;
+        border-color: #2980b9;
+        }
+
+        .button:active {
+        background-color: #2c3e50;
+        border-color: #2c3e50;
+        }
+    </style>
+  </head>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <body>
+    <div id="cats">
+      <button class="button" v-on:click="showpic">Click for Cats!</button> <br />
+      <img :src="image" alt="Cool Cat image" />
+    </div>
+  </body>
+</html>
+<script src="cats.js"></script>
