@@ -70,3 +70,22 @@ var contact = new Vue({
         contactText: 'I am no criminal!',
     }
 });
+
+var top = new Vue({
+    el: '#top',
+    data: {
+        title: "Welcome to Kevin's Portfolio",
+        subtitle: "Its a great portfolio, check it out!",
+        button: "Dig around!"
+    }
+})
+
+var about = new Vue({
+    el: '#about',
+    data: {
+        aboutTitle: "About Kevin!",
+        aboutImg: "images/intentToKill.jpg",
+        aboutDescription: "I am from UGAAAA, and I love ducks."
+        
+    }
+})
