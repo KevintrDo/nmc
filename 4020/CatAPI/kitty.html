@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Cat Stuff</title>
+</head>
+<body>
+    <div id="app">
+        <div id="block" v-for="eachCat in catArray">
+            <h2>{{ eachCat.name }}</h2><br>
+            <img :src="part1 + eachCat.reference_image_id + part2">
+            <ul><h3>Facts:</h3>
+                <li>
+                    Origin: {{ eachCat.origin }}
+                </li>
+                <li>
+                    Description: {{ eachCat.description }}
+                </li>
+                <li>
+                    Affection Level
+                    <div id="bar">
+                        <div id="marker" :style="{ marginLeft: barPosition(eachCat.affection_level) + 'px' }"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="kitty.js"></script>
