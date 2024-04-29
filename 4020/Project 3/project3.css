@@ -43,3 +43,7 @@ img {
 img:hover {
   transform: scale(1.05);
 }
+
+#buttons {
+  display: flex;
+}
