@@ -6,9 +6,9 @@ Vue.component('bobcat', {
         `<div class="cards">
 
         <h2>{{ thename }}</h2>
-        <h3>Adaptability Score: {{ adapt }}</h3>
-        <h3 id="description">Description: <p>{{ description }}</p></h3>
+        <h3>Adaptability Score: <p>{{ adapt }}</p></h3>
         <h3 id="origin" > Origin: <p>{{ origin }} </p></h3>
+        <h3 id="description">Description: <p>{{ description }}</p></h3>
         <h3 id="temperament">Temperament: <p>{{ temperament }} </p></h3>
         <div id="labelingState">
             <div>
