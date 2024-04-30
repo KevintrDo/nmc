@@ -1,0 +1,90 @@
+img {
+    width: 500px;
+}
+
+button { 
+    width: 80px; 
+    background-color: grey;
+    color:white;
+    padding: 8px;
+    border-radius: 12px;
+    border: solid black 4px;
+}
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+h2 {
+    font-size: 30px;
+    margin-top: 0px;
+    margin-left: 2%;
+    font-weight: 800;
+}
+h3 {
+    font-size: 15px;
+    margin-left: 20px;
+    color: red
+}
+
+h3 p {
+    font-size: 15px;
+    margin-left: 20px;
+    color: #1b7a30;
+}
+
+label {
+    margin-left: 20px;
+    padding: 10px;
+}
+
+#explanation {
+    padding: 50px;
+    background-color: #FAEDEC;
+    margin: 30px;
+}
+
+#explanation h1 {
+    text-align: center;
+}
+
+.stars{
+    color: gold;
+    margin-left: 35px;
+    font-size: 20px;
+}
+
+.labeling {
+    font-weight: 800;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+.cards {
+    margin: 30px; 
+    margin-bottom: 60px;
+    background-color: #c9c4bb;
+    padding: 20px;
+    border-radius: 20px;
+    width: 1000px;
+    height:100%;
+    border: solid 10px black;
+    transition: width 0.3s, height 0.3s; /* Add a smooth transition effect */
+    &:hover {
+        background-color: rgb(197, 191, 191);
+    }
+}
+
+#labelingState {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color:rgb(107, 87, 216);
+}
+
+#paragraph {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}

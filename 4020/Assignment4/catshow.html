@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="catshow.css">
+    <title>Assignment 4: Cat Components!</title>
+</head>
+
+<body>
+    <div class="cards">
+        <h1>Short Explanation!</h1>
+        <p id="paragraph">The provided code defines a Vue.js component called "bobcat" that displays information about different cat breeds, including their names, adaptability scores, descriptions, origins, temperaments, and various ratings such as child-friendliness, dog-friendliness, energy level, and etc. The component fetches data from theCatAPI.com using Axios based on the breed ID provided as a prop (catchoosing). It then displays this data along with a slideshow of images of the cat breed. This data is fetched by using the GET method and the data received is put in for each individual cat. The slideshow functionality allows us to cycle through the images of the specified cat breed defined in our HTML in the passing of the prop for “catchoosing” (my variable definition). The HTML file includes multiple instances of the "bobcat" component, each with a different breed ID, resulting in the display of information for several cat breeds. The CSS file provides styling for the component, including the size and alignment of text, colors, and layout.</p>
+    </div>
+    <div id="bobcat">
+        <bobcat catchoosing="chee"></bobcat>
+        <bobcat catchoosing="soma"></bobcat>
+        <bobcat catchoosing="sava"></bobcat>
+        <bobcat catchoosing="munc"></bobcat>
+        <bobcat catchoosing="tvan"></bobcat>
+        <bobcat catchoosing="chau"></bobcat>
+    </div>
+
+
+</body>
+    <script src="catshow.js"></script>
+</html>
