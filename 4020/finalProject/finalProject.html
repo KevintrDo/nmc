@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Ship Alien Game</title>
+    <link rel="stylesheet" href="finalProject.css">
+</head>
+<body>
+    <div id="app">
+        <h1 v-if="!gameStarted">ASTEROID ALCATRAZ</h1>
+        <div id="scoreboard">
+          <div class="score">Score: {{ score }}</div>
+          <div class="lives">Lives: {{ lives }}</div>
+        </div>
+        <div class="game-area">
+            <button v-if="!gameStarted" @click="startGame">Start</button>
+            <img id="spaceship" :style="{ left: spaceshipX + 'px', top: spaceshipY + 'px' }" src="spaceship.png" alt="Spaceship">
+            <canvas id="gameCanvas" width="400" height="600"></canvas>
+        </div>
+        <p v-if="!gameStarted">Press the button to start the game. W,A,S,D to move. You have three lives. Don't let the asteroids hit you. It'll get harder!</p>  
+        <br><br><br><br><br>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="finalProject.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    overflow: hidden;
+}
+
+#app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.game-area {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    background-color: #333;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.score, .lives {
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#spaceship {
+    position: absolute;
+    width: 50px; /* Set the width of the spaceship */
+    height: 50px; /* Set the height of the spaceship */
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+}
+
+button {
+    margin-top: 30px;
+    padding:20px;
+    font-size: 35px;
+    margin-left: 35%;
+}
+
+p {
+    color: white;
+}
+
+#scoreboard {
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: wheat;
+    align-items: center;
+}
