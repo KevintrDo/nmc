@@ -163,7 +163,7 @@ new Vue({
             this.moveSpaceship(); // Move the spaceship
             this.drawBullets(context); // Draw the bullets
         }, 1000 / 60); // 60 FPS
-
+        
         setInterval(() => {
             this.increaseMaxCircles();
         }, 3000); // Increase the maximum number of circles every 3 seconds
