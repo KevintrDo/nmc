@@ -165,10 +165,6 @@ new Vue({
         }, 1000 / 60); // 60 FPS
 
         setInterval(() => {
-            this.createCircle();
-        }, 3000); // Add one more ball every 5 seconds
-
-        setInterval(() => {
             this.increaseMaxCircles();
         }, 3000); // Increase the maximum number of circles every 3 seconds
     }
